@@ -2,36 +2,56 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MANCINGSPIN</title>
 <style>
-body{margin:0;background:#090909;color:#FFD700;font-family:Arial,sans-serif;text-align:center}
-header{padding:20px;background:#111;border-bottom:2px solid #FFD700}
-h1{margin:0;font-size:36px}
-.banner{padding:40px 20px;background:linear-gradient(135deg,#000,#3a2400)}
-.btn{display:inline-block;margin:8px;padding:14px 28px;background:#FFD700;color:#000;border-radius:30px;text-decoration:none;font-weight:bold}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:20px}
-.card{background:#171717;padding:18px;border-radius:12px;border:1px solid #FFD700}
-footer{padding:20px;color:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#080808;font-family:Arial,sans-serif;color:#fff}
+header{background:#111;padding:18px;text-align:center;border-bottom:2px solid gold}
+.logo{font-size:34px;font-weight:bold;color:#FFD700}
+.banner{padding:40px 20px;text-align:center;background:linear-gradient(180deg,#000,#3b2600)}
+.banner h2{color:#FFD700;font-size:28px;margin-bottom:10px}
+.btn{display:inline-block;margin:8px;padding:12px 24px;background:#FFD700;color:#000;text-decoration:none;border-radius:30px;font-weight:bold}
+.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:18px}
+.item{background:#171717;border:1px solid gold;border-radius:12px;padding:18px;text-align:center;color:#FFD700}
+.promo{padding:20px}
+.box{background:#171717;border:1px solid gold;border-radius:12px;padding:15px;margin-bottom:15px}
+footer{text-align:center;color:#888;padding:20px}
 </style>
 </head>
 <body>
 <header>
-<h1>MANCINGSPIN</h1>
-<p>Play Beyond Limits</p>
+<div class="logo">MANCINGSPIN</div>
+<p>PLAY BEYOND LIMITS</p>
 </header>
-<div class="banner">
-<h2>SELAMAT DATANG</h2>
-<p>Tampilan mobile warna hitam & emas.</p>
-<a href="#" class="btn">LOGIN</a>
-<a href="#" class="btn">DAFTAR</a>
+
+<section class="banner">
+<h2>WELCOME TO MANCINGSPIN</h2>
+<p>Website versi HP dengan tema hitam & emas.</p>
+<a class="btn" href="#">LOGIN</a>
+<a class="btn" href="#">DAFTAR</a>
+</section>
+
+<section class="menu">
+<div class="item">🎰 GAME</div>
+<div class="item">🎁 PROMO</div>
+<div class="item">🏆 EVENT</div>
+<div class="item">💬 LIVE CHAT</div>
+</section>
+
+<section class="promo">
+<div class="box">
+<h3>🎁 BONUS MEMBER BARU</h3>
+<p>Selamat datang di MANCINGSPIN.</p>
 </div>
-<div class="grid">
-<div class="card">🎁 PROMO</div>
-<div class="card">🎮 GAME</div>
-<div class="card">🏆 EVENT</div>
-<div class="card">💬 LIVE CHAT</div>
+<div class="box">
+<h3>🔥 EVENT MINGGUAN</h3>
+<p>Informasi promo dan event akan tampil di sini.</p>
 </div>
-<footer>© 2026 MANCINGSPIN</footer>
+</section>
+
+<footer>
+© 2026 MANCINGSPIN
+</footer>
 </body>
 </html>
