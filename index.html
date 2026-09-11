@@ -1,67 +1,67 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MancingSpin Lobby</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#000;color:#FFD700;padding:20px;}
+.container{max-width:430px;margin:auto;}
+.logo{text-align:center;font-size:32px;font-weight:bold;margin-bottom:20px;color:#FFD700;}
+.card{background:#111;border:2px solid #FFD700;border-radius:20px;padding:15px;margin-bottom:20px;}
+h2{text-align:center;margin-bottom:15px;}
+input{width:100%;padding:12px;margin:8px 0;border-radius:12px;border:1px solid #FFD700;background:#000;color:#fff;}
+button{width:100%;padding:12px;margin-top:10px;border:none;border-radius:20px;background:#FFD700;color:#000;font-weight:bold;font-size:16px;cursor:pointer;}
+.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:15px;}
+.item{background:#111;border:1px solid #FFD700;border-radius:15px;padding:20px;text-align:center;font-size:15px;font-weight:bold;}
+.footer{text-align:center;color:#888;margin-top:20px;font-size:12px;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="logo">MANCINGSPIN</div>
 
-body{
-  background:#000;
-  color:#FFD700;
-}
+<div class="card">
+<h2>LOGIN</h2>
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+<button onclick="login()">MASUK</button>
+<p style="text-align:center;margin-top:10px;">Belum punya akun? Daftar di bawah.</p>
+</div>
 
-.container{
-  width:100%;
-  max-width:420px;
-  margin:auto;
-  padding:20px;
-}
+<div class="card">
+<h2>DAFTAR AKUN</h2>
+<input type="text" placeholder="Nama Lengkap">
+<input type="text" placeholder="Username">
+<input type="email" placeholder="Email">
+<input type="text" placeholder="Nomor WhatsApp">
+<input type="password" placeholder="Password">
+<button>DAFTAR</button>
+</div>
 
-.card{
-  background:#111;
-  border:1px solid #FFD700;
-  border-radius:15px;
-  padding:15px;
-  margin-bottom:20px;
-}
+<div class="card" id="lobby" style="display:none;">
+<h2>MANCINGSPIN LOBBY</h2>
+<div class="menu">
+<div class="item">🎮 Game</div>
+<div class="item">🎁 Promo</div>
+<div class="item">🏆 Event</div>
+<div class="item">💬 Live Chat</div>
+<div class="item">⭐ Bonus</div>
+<div class="item">⚙ Pengaturan</div>
+<div class="item">📰 Berita</div>
+<div class="item">🚪 Keluar</div>
+</div>
+</div>
 
-h1,h2{
-  text-align:center;
-  color:#FFD700;
-  margin-bottom:15px;
-}
+<div class="footer">© 2026 MancingSpin</div>
+</div>
 
-input{
-  width:100%;
-  padding:12px;
-  margin:8px 0;
-  border-radius:10px;
-  border:1px solid #FFD700;
-  background:#000;
-  color:#fff;
+<script>
+function login(){
+  document.getElementById('lobby').style.display='block';
+  alert('Login berhasil!');
 }
-
-button{
-  width:100%;
-  padding:12px;
-  border:none;
-  border-radius:20px;
-  background:#FFD700;
-  color:#000;
-  font-weight:bold;
-  margin-top:10px;
-}
-
-.menu{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px;
-}
-
-.menu div{
-  background:#111;
-  border:1px solid #FFD700;
-  border-radius:15px;
-  padding:18px;
-  text-align:center;
-}
+</script>
+</body>
+</html>
